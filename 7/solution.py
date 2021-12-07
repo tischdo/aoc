@@ -31,7 +31,10 @@ def calculate_fuel_v2(positions: list[int], target_position: int) -> int:
     return total_fuel
 
 def increasing_fuel_sum(delta: int) -> int:
-    return sum(range(1, delta+1))
+    ### original solution for part 2, takes about 30s
+    # return sum(range(1, delta+1))
+    ### after some google research I found this formula, takes about 1s
+    return int((delta**2 + delta)/2)
 
 def find_optimal_position(positions: list[int], mode: str='v1') -> Result:
     if mode == 'v1':
