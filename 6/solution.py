@@ -87,12 +87,12 @@ if __name__=='__main__':
     swarm_fast = SwarmFast.from_swarm(swarm)
 
     # solution 1 (could also use _fast implementations here)
-    # test_swarm.age(days=18)
-    # assert test_swarm.count() == 26
-    # test_swarm.age(days=80-18)
-    # assert test_swarm.count() == 5934
-    # swarm.age(days=80)
-    # print(swarm.count())
+    test_swarm.age(days=18)
+    assert test_swarm.count() == 26
+    test_swarm.age(days=80-18)
+    assert test_swarm.count() == 5934
+    swarm.age(days=80)
+    print(swarm.count())
 
     # solution 2
     test_swarm_fast.age(days=256)
