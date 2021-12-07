@@ -93,7 +93,6 @@ def solve_v2(segments: list[Vector]):
         if points := segment.walk():
             passed_points.extend(points)
 
-
     return len(Counter(passed_points) - Counter(set(passed_points)))
 
 if __name__=='__main__':
