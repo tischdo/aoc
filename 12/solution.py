@@ -1,6 +1,5 @@
 from collections import defaultdict, Counter
 from dataclasses import dataclass, field
-# from line_profiler import profile
 
 test_input_one = """start-A
 start-b
