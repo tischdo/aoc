@@ -55,9 +55,9 @@ class Cave:
             if self.is_valid_path(cur_path, destination):
                 next_path = cur_path + [destination]
                 if destination == 'end':
-                    self.paths.append(cur_path + [destination])
+                    self.paths.append(next_path)
                 else:
-                    self.walk(cur_path + [destination])
+                    self.walk(next_path)
 
     def is_valid_path(self,
                       cur_path: list[str],
